@@ -11,14 +11,11 @@ const Navbar = () => {
   return (
     <div>
       <ul className="flex justify-center bg-white text-2xl font-bold">
-        <a href="#works">
-          <li className="m-4">works</li>
+		  <a href="#works" className="group" >
+			<li className="mx-4 text-red-600 ">works<span className="font-bold invisible group-hover:visible">.</span></li>
         </a>
-        <a href="#about">
-          <li className="m-4">about</li>
-        </a>
-        <a href="#contact">
-          <li className="m-4">contact</li>
+        <a href="#contact" className="group">
+          <li className="mx-4">contact<span className="font-bold invisible group-hover:visible">.</span></li>
         </a>
       </ul>
     </div>

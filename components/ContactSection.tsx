@@ -7,14 +7,20 @@ const ContactSection = () => {
     <>
       <section
         id="contact"
-        className="flex-center-everything container min-h-screen flex-col bg-slate-50"
+        className="py-14 flex-center-everything container flex-col "
       >
-        <Form formTitle="Let's Talk, or Chat, or..." />
-        <div className="mt-20 flex justify-between gap-10 text-3xl text-gray-800">
-          <FaLinkedin />
-          <FaGithubSquare />
-          <FaTwitter />
-          <GrMail />
+	  	<p className="text-xl my-5">thanks for scrolling this far.</p>
+		<div className="text-2xl text-center">
+			<span>contact me via </span>   
+			<div className="relative group text-red-600 md:inline">
+			  <a href="mailto:dante.mai96@gmail.com">dante.mai96@gmail.com</a>
+		  <span className="absolute -bottom-px left-0 w-full h-0.5 bg-red-600 transition-all group-hover:w-0"></span>
+			<span className="absolute -bottom-px left-0 w-0 h-0.5 bg-red-500 transition-all group-hover:w-full delay-150"></span>  
+		  </div>
+		</div>
+        <div className="mt-5 flex justify-between gap-10 text-3xl text-gray-800">
+			<a href='https://www.linkedin.com/in/dantemai/' target={'_blank'} className="hover:text-red-600"><FaLinkedin /></a>
+			<a href='https://github.com/se64vet' target={'_blank'}  className="hover:text-red-600"><FaGithubSquare /></a>
         </div>
       </section>
     </>

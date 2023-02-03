@@ -7,7 +7,7 @@ const Form = (props: FormProps) => {
   const handleChange = () => {}
   return (
     <>
-      <h3 className="my-5 text-3xl font-bold text-orange-500">
+      <h3 className="my-5 text-3xl font-semibold text-red-600">
         {props.formTitle}
       </h3>
       <form
@@ -17,22 +17,22 @@ const Form = (props: FormProps) => {
         <input
           className="w-full border border-gray-700"
           type="text"
-          placeholder="name"
+          placeholder=" name"
           onChange={handleChange}
         />
         <input
           className="w-full border border-gray-700"
           type="email"
-          placeholder="email"
+          placeholder=" email"
         />
         <textarea
           className="w-full border border-gray-700"
           cols={40}
           rows={7}
-          placeholder="message"
+          placeholder=" message"
         ></textarea>
         <input
-          className="self-end bg-orange-500 px-6 py-1 font-bold text-white"
+			className="self-end bg-gray-400 px-6 py-1 font-bold text-white hover:bg-red-800"
           type="submit"
           value="Send"
         />

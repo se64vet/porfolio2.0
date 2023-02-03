@@ -1,0 +1,40 @@
+{
+	"works":{},
+	"landingPages": [
+		{
+			"name": "Dante Mai",
+			"desc": "Portfolio v1.0",
+			"thumbnail": "/landingpages/portfolio10.webp"
+		},
+		{
+			"name": "Dante Mai",
+			"desc": "Portfolio v1.5",
+			"thumbnail": "/landingpages/portfolio15.webp"
+		},
+		{
+			"name": "Knox Church",
+			"desc": "Asian church information website",
+			"thumbnail": "/landingpages/church.webp"
+		},
+		{
+			"name": "Student Hub",
+			"desc": "News/Infos for exchange student",
+			"thumbnail": "/landingpages/studenthub.webp"
+		},
+		{
+			"name": "Outer Space",
+			"desc": "UI mentor CSS challenge",
+			"thumbnail": "/landingpages/space.webp"
+		},
+		{
+			"name": "Allstar Salon",
+			"desc": "Small bussiness website",
+			"thumbnail": "/landingpages/allstar.webp"
+		},
+		{
+			"name": "Blues Lounge",
+			"desc": "Small bussiness website",
+			"thumbnail": "/landingpages/blues.webp"
+		}
+	]
+}

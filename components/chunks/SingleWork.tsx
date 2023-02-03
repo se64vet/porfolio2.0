@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 type WorkProps = {
   even?: boolean
+  index: number
   work: {
     name: string
     cat: string
@@ -20,20 +21,33 @@ const SingleWork = (props: WorkProps) => {
       <div
         className={`${
           props.even ? 'lg:flex-row-reverse ' : ''
-        } flex-center-everything w-max flex-col-reverse gap-12 lg:w-full lg:flex-row`}
+        } p-2 !justify-evenly flex-center-everything w-max flex-col-reverse gap-12 lg:w-full lg:flex-row`}
       >
         <div
-          className={`${
-            props.even ? 'self-end text-right' : 'self-start text-left'
+			className={`lg:self-start ${
+            props.even ? 'text-right' : 'text-left'
           }`}
         >
-          <h2 className="text-5xl font-bold">{props.work.name}</h2>
+          <h2 className="text-5xl font-bold text-gray-600">{props.index}.{props.work.name}</h2>
           <p className="text-2xl">
-            &#91;<span className="italic">{props.work.cat}</span>
+            &#91;<span>{props.work.cat}</span>
             &#93; {props.work.type}
           </p>
-          <div className="mt-3 leading-5">
-            <p dangerouslySetInnerHTML={{ __html: props.work.desc_html }}></p>
+          <div className="mt-1 leading-5">
+            <Link href={props.work.demoUrl}>
+              <span className="relative cursor-pointer font-bold text-red-600  mr-3 text-2xl group">
+				Demo
+				  <span className="absolute -bottom-px left-0 w-0 h-0.5 bg-red-500 transition-all group-hover:w-full"></span> 
+              </span>
+            </Link>
+
+            <Link href={props.work.repoUrl}>
+              <span className="relative cursor-pointer font-bold text-gray-700 text-2xl group">
+				Code
+				  <span className="absolute -bottom-px right-0 w-0 h-0.5 bg-gray-700 transition-all group-hover:w-full"></span> 
+			  </span>
+            </Link>
+            <p className="mt-1" dangerouslySetInnerHTML={{ __html: props.work.desc_html }}></p>
           </div>
         </div>
 
@@ -41,22 +55,12 @@ const SingleWork = (props: WorkProps) => {
           <div
             style={{
               width: '30em',
-              height: '20em',
               position: 'relative',
+			  aspectRatio: '1/1',
             }}
+			  className="hover:drop-shadow-xl hover:-translate-y-1 ease-out duration-300"
           >
-            <Image layout="fill" objectFit="cover" src={'/1.jpg'} />
-          </div>
-          <div className="flex w-full flex-col justify-end text-right text-xl lg:flex-row lg:justify-between">
-            <Link href={props.work.demoUrl}>
-              <span className="font-bold text-orange-500 underline">
-                view site
-              </span>
-            </Link>
-
-            <Link href={props.work.repoUrl}>
-              <span>view code</span>
-            </Link>
+            <Image className="rounded-md" layout="fill" objectFit="cover" src={props.work.imgUrl} />
           </div>
         </div>
       </div>
