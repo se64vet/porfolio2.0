@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Fade from 'react-reveal/Fade'
+const Fade = require("react-reveal/Fade")
 
 
 const LandingPages:NextPage = () => {
