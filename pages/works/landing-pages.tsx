@@ -43,7 +43,7 @@ const LandingPages:NextPage = () => {
 						? <p className="text-3xl italic">no data found</p>
 						: data.map((page)=>(
 
-					<div className="relative hover:scale-110 hover:z-10 duration-200">
+					<div className="relative lg:hover:scale-110 lg:hover:z-10 duration-200">
 					<div className="m-auto w-1/2" style={{ aspectRatio: '1/1', position: 'relative'}}>
 						<Image className="rounded-xl" layout="fill" objectFit="contain" src={page.thumbnail}></Image>
 					</div>
