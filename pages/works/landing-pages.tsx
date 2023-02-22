@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 const Fade = require("react-reveal/Fade")
 
-
 const LandingPages:NextPage = () => {
 	const [loading, setLoading] = useState(true);
 	const [data, setData] = useState<any[]>([]);
@@ -23,7 +22,7 @@ const LandingPages:NextPage = () => {
 
 
 	return(
-		<Fade right>
+		<Fade >
 		<div className="flex-center-everything py-10 flex-col justify-enter" >
 			<Head>
 			<title>Dante | Landing pages</title>
@@ -43,12 +42,16 @@ const LandingPages:NextPage = () => {
 						? <p className="text-3xl italic">no data found</p>
 						: data.map((page)=>(
 
-					<div className="relative lg:hover:scale-110 lg:hover:z-10 duration-200">
+					<div className="relative">
 					<div className="m-auto w-1/2" style={{ aspectRatio: '1/1', position: 'relative'}}>
 						<Image className="rounded-xl" layout="fill" objectFit="contain" src={page.thumbnail}></Image>
 					</div>
 					<p className="text-3xl font-bold text-center">{page.name}</p>
 					<p className="text-2xl text-center">[{page.desc}]</p>
+					<div className="text-center text-2xl font-bold">
+						<a target={"_blank"} href={page.demoLink} className="cursor-pointer"><span className="mx-2 px-2 text-red-600 hover:underline ">#demo</span></a>	
+						<a target={"_blank"} href={page.gitLink} className="cursor-pointer"><span className="mx-2 text-gray-700 hover:underline">.code</span></a>	
+					</div>
 				</div>
 
 				))}

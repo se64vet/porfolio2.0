@@ -34,18 +34,18 @@ const SingleWork = (props: WorkProps) => {
             &#93; {props.work.type}
           </p>
           <div className="mt-1 leading-5">
-            <Link href={props.work.demoUrl}>
-              <span className="relative cursor-pointer font-bold text-red-600  mr-3 text-2xl group">
+            <Link href={props.work.demoUrl} passHref>
+              <a  href={props.work.demoUrl} target={"_blank"} className="relative cursor-pointer font-bold text-red-600  mr-3 text-2xl group">
 				Demo
 				  <span className="absolute -bottom-px left-0 w-0 h-0.5 bg-red-500 transition-all group-hover:w-full"></span> 
-              </span>
+              </a>
             </Link>
 
-            <Link href={props.work.repoUrl}>
-              <span className="relative cursor-pointer font-bold text-gray-700 text-2xl group">
+            <Link href={props.work.repoUrl}  passHref>
+			<a href={props.work.repoUrl} target={"_blank"} className="relative cursor-pointer font-bold text-gray-700 text-2xl group">
 				Code
 				  <span className="absolute -bottom-px right-0 w-0 h-0.5 bg-gray-700 transition-all group-hover:w-full"></span> 
-			  </span>
+			  </a>
             </Link>
             <p className="mt-1" dangerouslySetInnerHTML={{ __html: props.work.desc_html }}></p>
           </div>

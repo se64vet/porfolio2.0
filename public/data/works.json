@@ -4,37 +4,51 @@
 		{
 			"name": "Dante Mai",
 			"desc": "Portfolio v1.0",
-			"thumbnail": "/landingpages/portfolio10.webp"
+			"thumbnail": "/landingpages/portfolio10.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		},
 		{
 			"name": "Dante Mai",
 			"desc": "Portfolio v1.5",
-			"thumbnail": "/landingpages/portfolio15.webp"
+			"thumbnail": "/landingpages/portfolio15.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		},
 		{
 			"name": "Knox Church",
 			"desc": "Asian church information website",
-			"thumbnail": "/landingpages/church.webp"
+			"thumbnail": "/landingpages/church.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		},
 		{
 			"name": "Student Hub",
 			"desc": "News/Infos for exchange student",
-			"thumbnail": "/landingpages/studenthub.webp"
+			"thumbnail": "/landingpages/studenthub.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		},
 		{
 			"name": "Outer Space",
 			"desc": "UI mentor CSS challenge",
-			"thumbnail": "/landingpages/space.webp"
+			"thumbnail": "/landingpages/space.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		},
 		{
 			"name": "Allstar Salon",
 			"desc": "Small bussiness website",
-			"thumbnail": "/landingpages/allstar.webp"
+			"thumbnail": "/landingpages/allstar.webp",
+			"demoLink": "www.allstar-nails.com",
+			"gitLink": ""
 		},
 		{
 			"name": "Blues Lounge",
 			"desc": "Small bussiness website",
-			"thumbnail": "/landingpages/blues.webp"
+			"thumbnail": "/landingpages/blues.webp",
+			"demoLink": "#",
+			"gitLink": ""
 		}
 	]
 }

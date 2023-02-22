@@ -4,12 +4,12 @@ const Fade = require("react-reveal/Fade")
 import SingleWork from './chunks/SingleWork'
 const WorksSection = () => {
   const works = [{
-    name: 'StoreWise',
+    name: 'Store Helper',
     cat: 'Inventory management webapp',
     type: '',
 	desc_html:'Figma<br>NextJs | Tailwind<br>NodeJs | MongoDB',
-    demoUrl: 'updating...',
-    repoUrl: 'updating...',
+    demoUrl: 'https://storehelper.onrender.com/',
+    repoUrl: 'https://github.com/se64vet/store-helper',
     imgUrl: '/StoreWise.webp',
   	},
 	{
@@ -17,17 +17,17 @@ const WorksSection = () => {
     cat: 'E-commerce website',
     type: '',
 	desc_html:'ReactJs | Bootstrap<br>NodeJs',
-    demoUrl: 'updating...',
-    repoUrl: 'updating...',
+    demoUrl: 'https://felixhome.netlify.app/',
+    repoUrl: 'https://github.com/se64vet/React_Ecommerce_Web_App/tree/main',
     imgUrl: '/Felix.webp',
   	},
 	{
     name: 'Bier Garten',
-    cat: 'Restaurant management webapp',
+    cat: 'Night Lounge Webbapp',
     type: '',
 	desc_html:'ReactJs | Bootstrap<br>NodeJs',
-    demoUrl: 'updating...',
-    repoUrl: 'updating...',
+    demoUrl: 'https://bluelounges.netlify.app/',
+    repoUrl: 'https://github.com/se64vet/All-Blues-Lounge-s-Website/tree/master',
     imgUrl: '/restaurant.webp',
   	},
 	{
@@ -35,8 +35,8 @@ const WorksSection = () => {
     cat: 'advance todo-app',
     type: '',
 	desc_html:'ReactJs | Tailwind<br>NodeJs',
-    demoUrl: 'updating...',
-    repoUrl: 'updating...',
+    demoUrl: 'https://todo-dash-app.onrender.com/',
+    repoUrl: 'https://github.com/se64vet/Todo-Dash',
     imgUrl: '/Dash.webp',
   	},
 
@@ -46,7 +46,7 @@ const WorksSection = () => {
     type: '',
 	desc_html:'Figma<br>NextJs | ReactBootstrap',
     demoUrl: '/works/landing-pages',
-    repoUrl: 'updating...',
+    repoUrl: 'https://github.com/se64vet?tab=repositories',
     imgUrl: '/landingPages.webp',
   	},
    
