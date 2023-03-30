@@ -8,7 +8,7 @@ type WorkProps = {
   work: {
     name: string
     cat: string
-    type: string
+    type?: string
     desc_html: string
     demoUrl: string
     repoUrl: string
