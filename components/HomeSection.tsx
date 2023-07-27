@@ -5,7 +5,7 @@ const HomeSection = () => {
     title: 'Dante Mai.',
     lead: 'React | Node | MongoDB | Express',
     action: 'resumé',
-    url: '/data/dantemai_resume.pdf',
+    url: '/data/resume.pdf',
   }
   return (
     <>
